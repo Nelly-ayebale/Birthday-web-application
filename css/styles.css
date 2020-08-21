@@ -33,3 +33,7 @@ h1 {
     font-weight: bold;
     margin: 5px;
 }
+.login-form input {
+    height: 40px;
+    width: 90px;
+}
