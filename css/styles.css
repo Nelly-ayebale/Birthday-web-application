@@ -25,4 +25,11 @@ h1 {
 
 .login-form {
     padding: 50px;
+    
+}
+.login-form .info {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin: 5px;
 }
