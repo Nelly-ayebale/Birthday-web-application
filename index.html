@@ -17,27 +17,44 @@
         culture where the first name of the child
         goes in line with the day of the week the child was born.
     </h1>
-    <div class="container">
 
-        <h2 class="label">USER INFORMATION</h2>
-    </div>
+    <div class="user-info">
+        <div class="container">
+            <h2 class="label">USER INFORMATION</h2>
+
+            <form class="form" onsubmit="return akanName()">
+                <div class="YYYY">
+                    YEAR:
+                    <input id="put-year" type="number" name="YYYY" value="" required>
+                </div>
+
+                <div class="mm">
+                    MONTH:
+                    <input id="put-month" type="number" name="mm" value="" required>
+
+                </div>
+
+                <div class="date">
+                    DATE:
+                    <input id="put-date" type="number" name="date" value="" required>
+
+                </div>
+
+                <div class="Gender">
+                    <p>GENDER</p>
+                    FEMALE
+                    <input id="if-female" type="checkbox" name="Gender" value="female" required>
+
+                    MALE
+                    <input id="if-male" type="checkbox" name="Gender" value="male" required>
+
+                </div>
 
 
-    <form class="login-form">
 
-        <div class="info">ENTER BIRTHDAY</div>
-        <input type="text" name="dd">
-        <input type="text" name="mm">
-        <input type="text" name="YY">
 
-        <div class="info info-2">GENDER</div>
-        <input type="checkbox" class="input-center">MALE
-        <input type="checkbox" class="input-center">FEMALE
-        <input type="checkbox" class="input-center">OTHER
-
-        <div class="info button"></div>
-        <button type="submit">CLICK ME</button>
-    </form>
+            </form>
+        </div>
     </div>
 
 

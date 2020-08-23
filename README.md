@@ -1,16 +1,17 @@
-# ![WebApp](https://iharsh234.github.io/WebApp/images/demo/demo_landing.JPG)
-# WebApp
+# ![Birthday-web-application](https://Nelly-ayebale.github.io/Birthday-web-application/)
+# Birthday-web-application
 <table>
 <tr>
 <td>
-  A webapp using Quandl API to display history of stock growth in a given period of time. It helps predict the growth of stocks from the  charts of stock performace in any period of time. It helps to judge stocks, with the principle of momentum investing, which returns 1% per month on average.
+  This is a web application that allows a user to input their birthday Data, calculates that data and finds out the day of the week the user was born,
+  and according to their Gender, this application is able to assign the user with an Akan name which in Ghanain culture is the name that corresponds to the day of the week the individual was born.
 </td>
 </tr>
 </table>
 
 
 ## Demo
-Here is a working live demo :  https://iharsh234.github.io/WebApp/
+Here is a working live demo :  https://Nelly-ayebale.github.io/Birthday-web-application/
 
 
 ## Site

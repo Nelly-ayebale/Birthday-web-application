@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
 }
 h1 {
-    color: white;
+    color: black;
     font-weight: inherit;
     margin-top: 10px;
     margin-left: 20px;
@@ -36,4 +36,15 @@ h1 {
 .login-form input {
     height: 40px;
     width: 90px;
+}
+.login-form .info-2 {
+    margin-top: 20px;
+}
+.login-form .info-button {
+    margin-top: 20px;
+} 
+
+.login-form .Results {
+    margin-top: 20px;
+   
 }
