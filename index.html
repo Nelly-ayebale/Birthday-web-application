@@ -23,27 +23,22 @@
 
                 <div class="row">
 
-                    <form class="login-form" onsubmit="return akanName()">
-                        <div class="col-md-3">
-                            <label class="century">
-                                CENTURY:
-                                <input id="century" type="number" name="input" value="" required>
-                            </label>
-                        </div>
-                        <div class="col-md-3">
+                    <form class="login-form">
+
+                        <div class="col-md-4">
                             <label class="YYYY">
                                 YEAR:
                                 <input id="put-year" type="number" name="input" value="" required>
                             </label>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <label class="mm">
                                 MONTH:
                                 <input id="put-month" type="number" name="input" value="" required>
 
                             </label>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <label class="date">
                                 DATE:
                                 <input id="put-date" type="number" name="input" value="" required>
@@ -53,16 +48,19 @@
                         <label class="Gender">
                             <p>GENDER</p>
                             FEMALE
-                            <input id="if-female" type="radio" name="female" value="female">
+                            <input id="if-female" type="radio" name="gender" value="female">
 
                             MALE
-                            <input id="if-male" type="radio" name="male" value="male">
+                            <input id="if-male" type="radio" name="gender" value="male">
 
                         </label>
 
 
                         <div class="your-name">
-                            <button onclick="akanName();">SUBMIT</button>
+                            <button type="button" id="for-submit" onclick="akanName()">SUBMIT</button>
+
+                        </div>
+                        <div class="display">
                             <p>YOUR AKAN NAME IS:</p>
                         </div>
                 </div>

@@ -18,7 +18,8 @@ h1 {
 }
 .login-form {
     padding: 50px;
-    color: lightblue;
+    color: black;
+    font-weight: bolder;
     
 }
 .login-form input {
@@ -42,10 +43,10 @@ h1 {
 }
 .boxed .label {
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     background-color: pink;
 }
-.your-name  p {
+.display p {
     font-weight: bold;
     margin-top: 20px;
 
