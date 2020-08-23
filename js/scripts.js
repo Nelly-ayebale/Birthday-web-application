@@ -45,3 +45,11 @@ let maleAkanNames = [
 let femaleAkanNames = [
     "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
 ]
+
+if (genderValue === female && validMonth && validDate) {
+    document.getElementById("results") = "You were born on" + daysofTheWeek[index] + "and your Akan is" + maleAkanNames[index]
+} else if {
+    document.getElementById("results") = "You were born on" + daysofTheWeek[index] + "and your Akan is" + femaleAkanNames[index]
+} else {
+    console.log("No Akan name for you!")
+}
