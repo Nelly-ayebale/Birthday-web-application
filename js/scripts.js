@@ -30,7 +30,7 @@ var dayOfTheWeek = calculation();
 function calculation() {
     akanName();
     (((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + date) % 7;
-    return (Math.floor(dayOfTheWeek);
+    return (Math.floor(dayOfTheWeek)
 }
 
 
@@ -43,8 +43,8 @@ let femaleAkanNames = [
 ]
 
 switch (gender) {
-    case "male"
-    if (dayOfTheWeek == 0 && validMonth && validDate) {
+    case "male":
+        if (dayOfTheWeek == 0 && validMonth && validDate) {
             document.getElementById("results").innerHTML = "Sunday" + maleAkanNames[0];
         } else if (dayOfTheWeek == 1 && validMonth && validDate) {
             document.getElementById("results").innerHTML = "Monday" + maleAkanNames[1];
@@ -61,7 +61,7 @@ switch (gender) {
         }
 }
 break;
-    case "female"
+    case "female":
 if (dayOfTheWeek == 0) {
     document.getElementById("results").innerHTML = "Sunday" + femaleAkanNames[0];
 } else if (dayOfTheWeek == 1 && validMonth && validDate) {
