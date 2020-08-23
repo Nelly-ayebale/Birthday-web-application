@@ -18,47 +18,55 @@
 
     <div class="user-info">
         <div class="container">
-            <h2 class="label">USER INFORMATION</h2>
+            <div class="boxed">
+                <h2 class="label">USER INFORMATION</h2>
 
-            <form class="login-form" onsubmit="return akanName()">
-                <label class="century">
-                    CENTURY:
-                    <input id="century" type="number" name="input" value="" required>
-                </label>
+                <div class="row">
 
-                <label class="YYYY">
-                    YEAR:
-                    <input id="put-year" type="number" name="input" value="" required>
-                </label>
+                    <form class="login-form" onsubmit="return akanName()">
+                        <div class="col-md-3">
+                            <label class="century">
+                                CENTURY:
+                                <input id="century" type="number" name="input" value="" required>
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="YYYY">
+                                YEAR:
+                                <input id="put-year" type="number" name="input" value="" required>
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="mm">
+                                MONTH:
+                                <input id="put-month" type="number" name="input" value="" required>
 
-                <label class="mm">
-                    MONTH:
-                    <input id="put-month" type="number" name="input" value="" required>
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="date">
+                                DATE:
+                                <input id="put-date" type="number" name="input" value="" required>
 
-                </label>
+                            </label>
+                        </div>
+                        <label class="Gender">
+                            <p>GENDER</p>
+                            FEMALE
+                            <input id="if-female" type="radio" name="female" value="female">
 
-                <label class="date">
-                    DATE:
-                    <input id="put-date" type="number" name="input" value="" required>
+                            MALE
+                            <input id="if-male" type="radio" name="male" value="male">
 
-                </label>
-
-                <label class="Gender">
-                    <p>GENDER</p>
-                    FEMALE
-                    <input id="if-female" type="radio" name="female" value="female">
-
-                    MALE
-                    <input id="if-male" type="radio" name="male" value="male">
-
-                </label>
+                        </label>
 
 
-                <div>
-                    <button onclick="result();">SUBMIT</button>
+                        <div class="your-name">
+                            <button onclick="result();">SUBMIT</button>
+                            <p>YOUR AKAN NAME IS:</p>
+                        </div>
                 </div>
-
-
+            </div>
         </div>
         </form>
     </div>
