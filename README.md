@@ -64,9 +64,5 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 - The application should calculate the day of the week the user was born according to their date of birth
 - The application should display the Akan name of the User corresponding with the day they were born.
 
-
-
-
-
 [MIT](LICENSE) 
 
