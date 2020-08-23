@@ -29,3 +29,9 @@ function dateValid() {
 };
 let validMonth = monthValid();
 let validDate = dateValid();
+
+var d = new Date();
+d.setFullYear();
+document.getElementsByClassName("inputs");
+
+let dayOfTheWeek = d;
