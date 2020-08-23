@@ -21,9 +21,13 @@ h1 {
     
 }
 .login-form input {
-  width: 30px;
+  margin: 10px;
+  height: auto;
 }
 .Gender {
     margin-top: 20px;
     font-weight: bold;
+}
+.login-form button {
+    width: 90px;
 }

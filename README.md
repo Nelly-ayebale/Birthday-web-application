@@ -16,29 +16,19 @@ Here is a working live demo :  https://Nelly-ayebale.github.io/Birthday-web-appl
 
 ## Site
 
-### Landing Page
-Currently it is working on all NSE (India) Stocks, BSE (India) Stocks Symbol will be added soon.
-
-![](https://iharsh234.github.io/WebApp/images/demo/web_app_face.JPG)
-
-### Query Filled Form
-![](https://iharsh234.github.io/WebApp/images/demo/demo_query.JPG)
-
-### Charts
-![](https://iharsh234.github.io/WebApp/images/demo/demo_chart1.JPG)
-![](https://iharsh234.github.io/WebApp/images/demo/demo_chart2.JPG)
-![](https://iharsh234.github.io/WebApp/images/demo/demo_chart3.JPG)
-
+## About Author
+My Name is Ayebale Nelly Abigail and I am a student at Moringa School learning about Code and Programming. In this Project I display the skills
+I have recently acquired in JavaScript with help from Moringa School.
 
 ## Mobile support
 The WebApp is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
 
-![](https://iharsh234.github.io/WebApp/images/demo/mobile.png)
+![](https://iharsh234.github.io/Birthday-web-application/)
 
 
 
 
-## [Usage](https://iharsh234.github.io/WebApp/) 
+## [Usage](https://Nelly-ayebale.github.io/Birthday-web-application/) 
 
 ### Development
 Want to contribute? Great!
@@ -55,30 +45,28 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ### Bug / Feature Request
 
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/iharsh234/WebApp/issues/new) by including your search query and the expected result.
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/Nelly-ayebale/Birthday-web-application/issues/new) by including your search query and the expected result.
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/iharsh234/WebApp/issues/new). Please include sample queries and their corresponding results.
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/Nelly-ayebale/Birthday-web-application/issues/new). Please include sample queries and their corresponding results.
 
 
-## Built with 
+## Technologies used
 
-- [jQuery - Ajax](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
-- [Google Chart API](https://developers.google.com/chart/interactive/docs/quick_start) - Free , Rich Gallery , Customizable and Cross-browser compatible.
+- [HTML] - HTML simplifies writing text and content to be displayed on the webpage.
+- [CSS] -  CSS simplifies adding styles to the page.
 - [Bootstrap](http://getbootstrap.com/) - Extensive list of components and  Bundled Javascript plugins.
+- [Javascript] - Enables the user to interact with the page and get results according to his/her input.
+
 
 
 ## To-do
-- Add BSE (India) Symbol to the current App.
-- Decide comparison models of Stocks. (suggestions are most welcome).
-- Another WebApp, capable of comparing at least 10 stocks.
+- The application should take in the user's information through a form.
+- The application should calculate the day of the week the user was born according to their date of birth
+- The application should display the Akan name of the User corresponding with the day they were born.
 
-## Team
 
-[![Harsh Vijay](https://avatars1.githubusercontent.com/u/12688534?v=3&s=144)](https://github.com/iharsh234)  | [![Quandl.com](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://www.quandl.com/)
----|---
-[Harsh Vijay ](https://github.com/iharsh234) |[Quandl](https://www.quandl.com)
 
-## [License](https://github.com/iharsh234/WebApp/blob/master/LICENSE.md)
 
-MIT © [Harsh Vijay ](https://github.com/iharsh234)
+
+[MIT](LICENSE) 
 
