@@ -1,4 +1,6 @@
 function akanName() {
-    var
+    var yearOFBirth = document.getElementById("put-year").value;
+    var monthOfBirth = document.getElementById("put-month").value;
+    var dateOfBirth = document.getElementById("put-date").value;
 
 }
