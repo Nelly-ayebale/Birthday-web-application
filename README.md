@@ -59,10 +59,10 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 
 
-## To-do
-- The application should take in the user's information through a form.
-- The application should calculate the day of the week the user was born according to their date of birth
-- The application should display the Akan name of the User corresponding with the day they were born.
+## BDD
+- the user's information is taken  through a form.
+- Calculation of the day of the week is done for the user's information through their date of Birth to find out the day of the Week the user was born.
+- According to the day of the Week, the application displays the Akan Name of the user.
 
 [MIT](LICENSE) 
 
