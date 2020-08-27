@@ -5,10 +5,11 @@
     <title>BIRTHDAY WEB APPLICATION.</title>
     <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <script src="./js/scripts.js"></script>
 </head>
 
 <body>
-    <script src="./js/scripts.js"></script>
+
     <h1>This is a web application that takes the user's Birthday and calculates the day of the week they were born.
         Moreso,This application
         assigns an Akan Name to the User depending on their Gender. The Akan Name is also derived from the Ghanain
@@ -16,60 +17,38 @@
         goes in line with the day of the week the child was born.
     </h1>
 
-    <div class="user-info">
-        <div class="container">
-            <div class="boxed">
-                <h2 class="label">USER INFORMATION</h2>
-
-                <div class="row">
-
-                    <form class="login-form">
-
-                        <div class="col-md-4">
-                            <label class="YYYY">
-                                YEAR:
-                                <input id="put-year" type="number" name="input" value="" required>
-                            </label>
-                        </div>
-                        <div class="col-md-4">
-                            <label class="mm">
-                                MONTH:
-                                <input id="put-month" type="number" name="input" value="" required>
-
-                            </label>
-                        </div>
-                        <div class="col-md-4">
-                            <label class="date">
-                                DATE:
-                                <input id="put-date" type="number" name="input" value="" required>
-
-                            </label>
-                        </div>
-                        <label class="Gender">
-                            <p>GENDER</p>
-                            FEMALE
-                            <input id="if-female" type="radio" name="gender" value="female">
-
-                            MALE
-                            <input id="if-male" type="radio" name="gender" value="male">
-
-                        </label>
-
-
-                        <div class="your-name">
-                            <button type="button" id="for-submit" onsubmit="results()">SUBMIT</button>
-
-                        </div>
-                        <div class="display">
-                            <p>YOUR AKAN NAME IS:</p>
-                        </div>
-                </div>
+    <form>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
             </div>
         </div>
-        </form>
-    </div>
-    </div>
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+            </div>
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            First radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            Second radio
+                        </label>
+                    </div>
 
+    </form>
 
 
 </body>
