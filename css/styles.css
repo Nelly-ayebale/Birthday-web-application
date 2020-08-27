@@ -1,5 +1,7 @@
 body {
-    background-color: turquoise;
+    background-image: url(../background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h1 {
     color: black;
@@ -11,5 +13,15 @@ form {
     color: black;
     font-weight: bolder;
     padding-top: 20px;
+    font-size: 20px;
     
+}
+.container p {
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+.btn-primary {
+    margin-top: 20px;
 }

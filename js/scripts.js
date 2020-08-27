@@ -1,105 +1,35 @@
-function akanName() {
-    var yearOfBirth = parseInt(document.getElementById("put-year")).value;
-    var monthOfBirth = parseInt(document.getElementById("put-month")).value;
-    var dateOfBirth = parseInt(document.getElementById("put-date")).value;
-    var results = document.getElementById("for-submit").value;
-    var gender = document.getElementsByName("gender").value;
-    var maleAkanNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    var femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
-    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-}
-
-var yy = yearOfBirth;
-var mm = monthOfBirth;
-var dd = dateOfBirth;
-var Gender = gender;
-
-var day = new Date(yy + "/" + mm + "/" + dd);
-let dateOfBirth = day.getDay();
+var maleAkanNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+var femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 
-if (dd <= 0 || dd > 31) {
-    alert("Invalid date");
-    return false;
-} else {
-    alert("valid")
-}
-if (mm <= 0 || mm > 12) {
-    alert("Please enter the correct month")
-    return false;
-} else {
-    alert("valid")
-}
-let results = dateOfBirth;
-akanName() = results();
-
-function results() {
-    if (Gender == "male" && mm == true && dd == true) {
-        switch (dateOfBirth) {
-            case 0:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[0];
-                return false;
-                break;
-            case 1:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[1];
-                return false;
-                break;
-            case 2:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[2];
-                return false;
-                break;
-            case 3:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[0];
-                return false;
-                break;
-            case 4:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[0];
-                return false;
-                break;
-            case 5:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[0];
-                return false;
-                break;
-            case 6:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[0];
-                return false;
-                break;
-            default:
-                alert("You are undefined");
-        }
-    } else if (Gender == "female" && mm == true && dd == true) {
-        switch (dateOfBirth) {
-            case 0:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[0];
-                return false;
-                break;
-            case 1:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[1];
-                return false;
-                break;
-            case 2:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[2];
-                return false;
-                break;
-            case 3:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[0];
-                return false;
-                break;
-            case 4:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[0];
-                return false;
-                break;
-            case 5:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[0];
-                return false;
-                break;
-            case 6:
-                document.getElementById("display").textContent = "You were born on a" + "and your Akan name is" + maleAkanNames[0];
-                return false;
-                break;
-            default:
-                alert("You are undefined");
-        }
+function getAkanName() {
+    var date = document.getElementById('date').value;
+    var gender = document.getElementById('gender').value;
+    var year = parseInt(date.substr(0, 4))
+    var CC = parseInt(date.substr(0, 2));
+    var DD = parseInt(date.substr(8, 9));
+    var MM = parseInt(date.substr(5, 7));
+    var YY = parseInt(date.substr(1, 3));
+    var dayOfTheWeek = parseInt(
+        (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7
+    );
+    var date = new Date(year, MM - 1, DD);
+    if (date > new Date()) {
+        alert("Invalid Date!")
     }
+    if (gender === 'male') {
+        alert("Your Akan Name is " + maleAkanNames[dayOfTheWeek]);
+    } else if (gender === 'female') {
+        alert("Your Akan Name is " + femaleAkanNames[dayOfTheWeek]);
+    } else {
+        alert("You are undefined");
+    }
+
 }
+
+
+
+
+
+
 

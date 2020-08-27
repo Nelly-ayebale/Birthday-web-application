@@ -5,7 +5,7 @@
     <title>BIRTHDAY WEB APPLICATION.</title>
     <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="./css/styles.css" rel="stylesheet" type="text/css">
-    <script src="./js/scripts.js"></script>
+
 </head>
 
 <body>
@@ -17,68 +17,30 @@
             culture where the first name of the child
             goes in line with the day of the week the child was born.
         </h1>
+        <p>NOW LET US FIND YOURS;</p>
 
         <form>
-            <div class="form-row">
-                <div class="col-md-4 ">
-                    <label for="validationServer01">Name</label>
-                    <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
 
-
-                </div>
-                <div class="col-md-4 mb-3">
-                    <label for="validationServer02">Last name</label>
-                    <input type="text" class="form-control is-valid" id="validationServer02" value="" required>
-
-                </div>
             </div>
-            <div class="form-row">
-                <div class="col-md-3 mb-3">
-                    <label for="Year-of-birth">Year of birth (format : YYYY)</label>
-                    <input type="number" class="form-control is-invalid" id="valid-year" aria-describedby="valid-year"
-                        required>
-
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="month-of-birth">Month of Birth(format : mm)</label>
-                    <input type="number" class="form-control is-invalid" id="month-of-birth"
-                        aria-describedby="month-of-birthFeedback" required>
-                    </select>
-
-
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="date-of-birth">date of birth (format : dd)</label>
-                    <input type="text" class="form-control is-invalid" id="date-of-birth"
-                        aria-describedby="date-of-birthFeedback" required>
-
-                </div>
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="date" class="form-control" id="date" name="date" />
             </div>
-            <fieldset class="form-group">
-                <div class="row">
-                    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                                MALE
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                                FEMALE
-                            </label>
-                        </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
-                    </div>
-                </div>
-            </fieldset>
+            <div class="form-group">
+                <label for="gender">GENDER</label>
+                <select name="gender" id="gender">
+                    <option value="male">MALE</option>
+                    <option value="female">FEMALE</option>
+                </select>
+            </div>
+            <input type="submit" class="btn btn-primary" onclick="getAkanName()" />
 
         </form>
     </div>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
