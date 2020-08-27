@@ -9,48 +9,76 @@
 </head>
 
 <body>
+    <div class="container">
 
-    <h1>This is a web application that takes the user's Birthday and calculates the day of the week they were born.
-        Moreso,This application
-        assigns an Akan Name to the User depending on their Gender. The Akan Name is also derived from the Ghanain
-        culture where the first name of the child
-        goes in line with the day of the week the child was born.
-    </h1>
+        <h1>This is a web application that takes the user's Birthday and calculates the day of the week they were born.
+            Moreso,This application
+            assigns an Akan Name to the User depending on their Gender. The Akan Name is also derived from the Ghanain
+            culture where the first name of the child
+            goes in line with the day of the week the child was born.
+        </h1>
 
-    <form>
-        <div class="form-group row">
-            <label for="Name" class="col-sm-2 col-form-label">Name</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="Name">
+        <form>
+            <div class="form-row">
+                <div class="col-md-4 ">
+                    <label for="validationServer01">Name</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
+
+
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationServer02">Last name</label>
+                    <input type="text" class="form-control is-valid" id="validationServer02" value="" required>
+
+                </div>
             </div>
-        </div>
-        <div class="form-group row">
-            <label for="birthday" class="col-sm-2 col-form-label">Birthday</label>
-            <div class="col-sm-10">
-                <input type="number" class="form-control" id="birthday">
+            <div class="form-row">
+                <div class="col-md-3 mb-3">
+                    <label for="Year-of-birth">Year of birth (format : YYYY)</label>
+                    <input type="number" class="form-control is-invalid" id="valid-year" aria-describedby="valid-year"
+                        required>
+
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="month-of-birth">Month of Birth(format : mm)</label>
+                    <input type="number" class="form-control is-invalid" id="month-of-birth"
+                        aria-describedby="month-of-birthFeedback" required>
+                    </select>
+
+
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="date-of-birth">date of birth (format : dd)</label>
+                    <input type="text" class="form-control is-invalid" id="date-of-birth"
+                        aria-describedby="date-of-birthFeedback" required>
+
+                </div>
             </div>
-        </div>
-        <fieldset class="form-group">
-            <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0"></legend>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
-                            checked>
-                        <label class="form-check-label" for="gridRadios1">
-                            Male
-                        </label>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                MALE
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                FEMALE
+                            </label>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                        <label class="form-check-label" for="gridRadios2">
-                            Female
-                        </label>
-                    </div>
+                </div>
+            </fieldset>
 
-    </form>
-
-
+        </form>
+    </div>
 </body>
 
 </html>
